@@ -1,11 +1,48 @@
 .menu-button {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
+@extend %button;
+
+&.is-open .menu-button__icon-close {
+opacity: 1;
 }
 
-.menu-button__icons {
-    fill: rgba(212, 20, 67, 1)
+&.is-open .menu-button__icon-burger {
+    opacity: 0;
+}
+}
+
+.menu-button__icon-close {
+    opacity: 0;
+}
+
+.menu-button__icon-burger,
+.menu-button__icon-close {
+    stroke: $accent-color;
+}
+
+
+
+
+.hero__btn-primary,
+.hero__btn-secondary {
+    @extend %button;
+  
+    font-size: 8px;
+    line-height: 1.25;
+    text-align: center;
+
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero__btn-primary {
+    padding: 7px 16px;
+    background-color: $accent-color;
+    color: $primary-white-color;
+    margin-right: 8px;
+}
+
+.hero__btn-secondary {
+    padding: 7px 14px;
+    color: $accent-color;
+    background-color: $primary-white-color;
 }

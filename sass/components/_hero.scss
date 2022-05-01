@@ -1,5 +1,4 @@
-.hero__img {
-    
+.hero__img {    
     max-width: 100%;
     display: block;
     height: auto;
@@ -11,8 +10,8 @@
     position: relative;
     padding-top: 25px;
     padding-bottom: 75px;
-
     background-color: $bgc-section;
+    border-bottom: 1px solid $title-color;
 }
 
 .hero__picture {
@@ -25,8 +24,34 @@
     right: 32px;
 }
 
+.hero__slogan {
+position: absolute;
+top: 136px;
+right: 82px;
+z-index: 2;
+
+font-family: $secondary-font;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+}
+
 .hero__text {
-    position: absolute;
-    z-index: 2;
-        
+font-size: 26px;
+line-height: 1.15;
+ color: $primary-white-color;      
+}
+
+.hero__desc {
+font-size: 47px;
+line-height: 0.97;
+color: $accent-color;
+ 
+}
+
+.hero__wrap {
+        position: absolute;
+        bottom: 158px;
+        right: 147px;
+    display: flex;
+
 }

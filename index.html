@@ -27,8 +27,8 @@
 
 <button class="menu-button" type="button">
     <svg class="menu-button__icons" width="20" height="12">
-        <use href="./images/symbol-defs.svg#burger"></use>
-        <use href="./images/symbol-defs.svg#close"></use>
+        <use class="menu-button__icon-burger" href="./images/symbol-defs.svg#burger"></use>
+        <use class="menu-button__icon-close" href="./images/symbol-defs.svg#close"></use>
     </svg>
 </button>
 
@@ -54,23 +54,100 @@
 </header>
 <main>
 <section class="hero-section">
-
+<picture>
 <img 
 class="hero__img"
 srcset="./images/circle.png 1x, ./images/circle@2x.png 2x"
 src="./images/circle.png" alt="Circle"
 >
+
 <img 
 class="hero__picture" 
 srcset="./images/icecream.png 1x, ./images/icecream@2x.png 2x" 
 src="./images/icecream.png"
     alt="Ice-cream">
+</picture>
+    <p class="hero__slogan"><span class="hero__text">ice cream <br> made with <br></span><span class="hero__desc">passion</span></p>
 
-    <p class="hero__text">ice cream made with passion</p>
+    <div class="hero__wrap">
+    <button class="hero__btn-primary" type="button">Products</button>
+
+    <button class="hero__btn-secondary" type="button">How it’s made?</button>
+</div>
+</section>
+
+<section class="products section">
+
+<div class="container">
+<p class="products__desc">100% natural</p>
+<p class="products__text">products</p>
+
+<ul class="products__list">
+<li class="products__item">
+<img 
+class="products__picture"
+srcset="./images/ice-cream-mobile.png 1x, ./images/ice-cream-mobile@2x.png 2x" 
+src="./images/ice-cream-mobile.png"
+alt="Strawberry ice-cream">
+
+<div class="products__wrap">
+<h2 class="products__title">ice cream</h2>
+
+<svg class="products__icons" width="26" height="6">
+<use class="products__icon-point" href="./images/symbol-defs.svg#point"></use>
+</svg>
+
+<p class="products__more">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
+aliqua facilisis.</p>
+
+<img 
+class="products__img"
+srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x"
+src="./images/arrow.png" 
+alt="Arrow right">
+</div>
+    </li>
+
+    <li class="products__item">
+    <img class="products__picture" srcset="./images/icecofee-mobile.png 1x, ./images/icecofee-mobile@2x.png 2x"
+        src="./images/icecofee-mobile.png" alt="Ice cofee">
+    
+    <div class="products__wrap">
+        <h2 class="products__title">ice coffee</h2>
+    
+        <svg class="products__icons" width="26" height="6">
+            <use class="products__icon-point" href="./images/symbol-defs.svg#point"></use>
+        </svg>
+    
+        <p class="products__more">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et. dolore magna
+            aliqua facilisis.</p>
+    
+        <img class="products__img" srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x" src="./images/arrow.png"
+            alt="Arrow right">
+    </li>
+    <li class="products__item">
+    <img class="products__picture" srcset="./images/milkshake-mobile.png 1x, ./images/milkshake-mobile@2x.png 2x"
+        src="./images/milkshake-mobile.png" alt="Milkshake">
+    
+    <div class="products__wrap">
+        <h2 class="products__title">Milkshake</h2>
+    
+        <svg class="products__icons" width="26" height="6">
+            <use class="products__icon-point" href="./images/symbol-defs.svg#point"></use>
+        </svg>
+    
+        <p class="products__more">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et. dolore magna
+            aliqua facilisis.</p>
+    
+        <img class="products__img" srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x" src="./images/arrow.png"
+            alt="Arrow right">
+    </li>
+</ul>
+</div>
 </section>
 </main>
-   
-
 
  </body>
 </html>

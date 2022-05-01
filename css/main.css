@@ -1,7 +1,16 @@
-.site-nav {
+.site-nav, .products__list {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.menu-button, .hero__btn-primary,
+.hero__btn-secondary {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .container {
@@ -48,22 +57,54 @@
   }
 }
 
-.logo__image {
-  max-width: 100%;
-  display: block;
-  height: auto;
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
 }
 
-.menu-button {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
+.logo {
+  padding-top: 8px;
 }
 
-.menu-button__icons {
-  fill: #d41443;
+.menu-button.is-open .menu-button__icon-close {
+  opacity: 1;
+}
+
+.menu-button.is-open .menu-button__icon-burger {
+  opacity: 0;
+}
+
+.menu-button__icon-close {
+  opacity: 0;
+}
+
+.menu-button__icon-burger,
+.menu-button__icon-close {
+  stroke: #D41443;
+}
+
+.hero__btn-primary,
+.hero__btn-secondary {
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hero__btn-primary {
+  padding: 7px 16px;
+  background-color: #D41443;
+  color: #FFFFFF;
+  margin-right: 8px;
+}
+
+.hero__btn-secondary {
+  padding: 7px 14px;
+  color: #D41443;
+  background-color: #FFFFFF;
 }
 
 @media screen and (max-width: 1199px) {
@@ -104,6 +145,7 @@
   padding-top: 25px;
   padding-bottom: 75px;
   background-color: #FFB8CA;
+  border-bottom: 1px solid #FFA5BA;
 }
 
 .hero__picture {
@@ -115,8 +157,152 @@
   right: 32px;
 }
 
-.hero__text {
+.hero__slogan {
   position: absolute;
+  top: 136px;
+  right: 82px;
   z-index: 2;
+  font-family: "Titan One", cursive;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero__text {
+  font-size: 26px;
+  line-height: 1.15;
+  color: #FFFFFF;
+}
+
+.hero__desc {
+  font-size: 47px;
+  line-height: 0.97;
+  color: #D41443;
+}
+
+.hero__wrap {
+  position: absolute;
+  bottom: 158px;
+  right: 147px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.products__desc {
+  margin-bottom: 15px;
+  font-family: "Titan One", cursive;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #FFA5BA;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.products__text {
+  margin-bottom: 148px;
+  font-family: "Titan One", cursive;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.products__item {
+  position: relative;
+  max-width: 280px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFB8CA;
+  border-radius: 24px;
+}
+
+.products__item:not(:last-child) {
+  margin-bottom: 140px;
+}
+
+.products__title {
+  margin-bottom: 32px;
+  font-family: "Titan One", cursive;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.products__icons {
+  margin-bottom: 32px;
+}
+
+.products__icon-point {
+  fill: #FFFFFF;
+}
+
+.products__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 160px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 24px;
+}
+
+.products__more {
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.products__picture {
+  position: absolute;
+  top: -140px;
+}
+
+.products__item:nth-child(1) {
+  background-color: #FFB8CA;
+}
+
+.products__item:nth-child(2) {
+  background-color: #F0D1A5;
+}
+
+.products__item:nth-child(3) {
+  background-color: #C2E297;
 }
 /*# sourceMappingURL=main.css.map */
