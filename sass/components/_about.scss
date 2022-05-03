@@ -1,0 +1,63 @@
+.about {
+    background-color: $section-bg;
+background-image: url(../images/sectionbg-mob.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: 75% 75%;
+}
+
+.about__desc {
+    margin-bottom: 15px;
+    font-family: $secondary-font;
+    font-size: 18px;
+    line-height: 1.17;
+    color: $title-color;
+   
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about__title {
+    margin-bottom: 32px;
+
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: $accent-color;
+}
+
+.about__img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+
+.about__text, 
+.about__paragraph {
+    margin-bottom: 34px;
+    max-width: 220px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    
+    color: $secondary-color-text;
+}
+
+.about__paragraph {
+    color: $color-text;
+    white-space: break-spaces;
+    margin-bottom: 20px;
+
+}
+.about__icon {
+    margin-left: 14px;
+}
+    
+
+      
+

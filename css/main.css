@@ -1,16 +1,17 @@
-.site-nav, .products__list {
+.site-nav, .products__list, .advantages__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .menu-button, .hero__btn-primary,
-.hero__btn-secondary {
+.hero__btn-secondary, .products__btn, .about__btn {
   display: inline-block;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .container {
@@ -59,7 +60,7 @@
 
 @media screen and (max-width: 767px) {
   .section {
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 40px;
   }
 }
@@ -105,6 +106,31 @@
   padding: 7px 14px;
   color: #D41443;
   background-color: #FFFFFF;
+}
+
+.products__btn {
+  width: 40px;
+  height: 40px;
+}
+
+.about__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px 38px 17px 37px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #D41443;
+  background-color: #FFFFFF;
+  border-radius: 22px;
+}
+
+.about__btn:hover, .about__btn:focus {
+  background-color: #ECEBEB;
 }
 
 @media screen and (max-width: 1199px) {
@@ -163,6 +189,7 @@
   right: 82px;
   z-index: 2;
   font-family: "Titan One", cursive;
+  font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -206,9 +233,15 @@ img {
   height: auto;
 }
 
+.products__section {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
 .products__desc {
   margin-bottom: 15px;
   font-family: "Titan One", cursive;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
   color: #FFA5BA;
@@ -242,14 +275,23 @@ img {
 }
 
 .products__title {
-  margin-bottom: 32px;
   font-family: "Titan One", cursive;
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.products__title::after {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 6px;
+  background-image: url(../images/points.png);
+  margin: 32px auto;
 }
 
 .products__icons {
@@ -304,5 +346,193 @@ img {
 
 .products__item:nth-child(3) {
   background-color: #C2E297;
+}
+
+.about {
+  background-color: #FFF5F6;
+  background-image: url(../images/sectionbg-mob.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 75% 75%;
+}
+
+.about__desc {
+  margin-bottom: 15px;
+  font-family: "Titan One", cursive;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #FFA5BA;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__title {
+  margin-bottom: 32px;
+  font-family: "Titan One", cursive;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.about__img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.about__text,
+.about__paragraph {
+  margin-bottom: 34px;
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #000000;
+}
+
+.about__paragraph {
+  color: #907E82;
+  white-space: break-spaces;
+  margin-bottom: 20px;
+}
+
+.about__icon {
+  margin-left: 14px;
+}
+
+.advantages {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-color: #FFF5F6;
+}
+
+.advantages__info {
+  font-family: "Titan One", cursive;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.advantages__text {
+  max-width: 230px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+  color: #000000;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.advantages__item::before {
+  content: '';
+  display: block;
+  width: 33px;
+  height: 50px;
+  margin-bottom: 16px;
+}
+
+.icon-bucket {
+  background-image: url("../images/bucket.png");
+  background-repeat: no-repeat;
+}
+
+.icon-apple {
+  background-image: url("../images/apple.png");
+  background-repeat: no-repeat;
+}
+
+.icon-heart {
+  background-image: url("../images/heart.png");
+  background-repeat: no-repeat;
+}
+
+.gallery {
+  padding-bottom: 80px;
+}
+
+.gallery__img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.rewiews__img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+}
+
+.rewiews {
+  padding-bottom: 48px;
+}
+
+.rewiews__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  color: #000000;
+  white-space: break-spaces;
+  width: 100%;
+  background-image: repeating-linear-gradient(transparent 0 30px, #E1E1E1 20px 31px);
+  background-size: 1px;
+  background-position: 100px 260px;
+  padding-left: 15px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+}
+
+.rewiews__wrap {
+  position: relative;
+  background-color: #FAFAFA;
+  padding: 43px 50px 26px 50px;
+  z-index: 1;
+}
+
+.rewiews__name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  color: #000000;
+}
+
+.rewiews__name::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 4px;
+  background-image: url(../images/red-points.png);
+  margin: 16px auto;
+}
+
+.rewiews__name::after {
+  content: '';
+  display: block;
+  width: 72px;
+  height: 12px;
+  background-image: url(../images/slider.png);
+  margin-top: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.rewiews__wrap::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 53px;
+  width: 54px;
+  height: 40px;
+  display: block;
+  background-image: url(../images/quotes.png);
+  z-index: -1;
 }
 /*# sourceMappingURL=main.css.map */

@@ -67,7 +67,7 @@ srcset="./images/icecream.png 1x, ./images/icecream@2x.png 2x"
 src="./images/icecream.png"
     alt="Ice-cream">
 </picture>
-    <p class="hero__slogan"><span class="hero__text">ice cream <br> made with <br></span><span class="hero__desc">passion</span></p>
+    <h1 class="hero__slogan"><span class="hero__text">ice cream <br> made with <br></span><span class="hero__desc">passion</span></h1>
 
     <div class="hero__wrap">
     <button class="hero__btn-primary" type="button">Products</button>
@@ -76,11 +76,11 @@ src="./images/icecream.png"
 </div>
 </section>
 
-<section class="products section">
+<section class="products__section">
 
 <div class="container">
-<p class="products__desc">100% natural</p>
-<p class="products__text">products</p>
+<h2 class="products__desc">100% natural</h2>
+<h2 class="products__text">products</h2>
 
 <ul class="products__list">
 <li class="products__item">
@@ -93,18 +93,16 @@ alt="Strawberry ice-cream">
 <div class="products__wrap">
 <h2 class="products__title">ice cream</h2>
 
-<svg class="products__icons" width="26" height="6">
-<use class="products__icon-point" href="./images/symbol-defs.svg#point"></use>
-</svg>
-
 <p class="products__more">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et. dolore magna
 aliqua facilisis.</p>
 
+<button class="products__btn" type="button">
 <img 
 class="products__img"
 srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x"
 src="./images/arrow.png" 
 alt="Arrow right">
+</button>
 </div>
     </li>
 
@@ -115,16 +113,14 @@ alt="Arrow right">
     <div class="products__wrap">
         <h2 class="products__title">ice coffee</h2>
     
-        <svg class="products__icons" width="26" height="6">
-            <use class="products__icon-point" href="./images/symbol-defs.svg#point"></use>
-        </svg>
     
         <p class="products__more">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et. dolore magna
             aliqua facilisis.</p>
-    
+    <button class="products__btn" type="button">
         <img class="products__img" srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x" src="./images/arrow.png"
             alt="Arrow right">
+            </button>
     </li>
     <li class="products__item">
     <img class="products__picture" srcset="./images/milkshake-mobile.png 1x, ./images/milkshake-mobile@2x.png 2x"
@@ -132,20 +128,92 @@ alt="Arrow right">
     
     <div class="products__wrap">
         <h2 class="products__title">Milkshake</h2>
-    
-        <svg class="products__icons" width="26" height="6">
-            <use class="products__icon-point" href="./images/symbol-defs.svg#point"></use>
-        </svg>
-    
+       
         <p class="products__more">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et. dolore magna
             aliqua facilisis.</p>
-    
+    <button class="products__btn" type="button">
         <img class="products__img" srcset="./images/arrow.png 1x, ./images/arrow@2x.png 2x" src="./images/arrow.png"
             alt="Arrow right">
+            </button>
     </li>
 </ul>
 </div>
+</section>
+
+<section class="about section">
+    <div class="container">
+    <p class="about__desc">tradition and love</p>
+    <h2 class="about__title">how it’s made?</h2>
+<img class="about__img" 
+srcset="./images/cow-mobile.png 1x, ./images/cow-mobile@2x.png 2x" 
+src="./images/cow-mobile.png"
+alt="Cow">
+
+<p class="about__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
+Maecenas eleifend erat at justo <br> fringilla.</p>
+
+<p class="about__paragraph">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
+Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+
+Aliquam erat volutpat. Aenean accumsan.</p>
+
+<button class="about__btn" type="button">Read more
+    <svg class="about__icon" width="8" height="10">
+        <use href="./images/symbol-defs.svg#arrow-right"></use>
+    </svg>
+    </button>
+</div>
+</section>
+
+<section class="advantages">
+    <div class="container">
+    <h2 hidden>Advantages</h2>
+   <ul class="advantages__list">
+    <li class="advantages__item icon-bucket">
+    <p class="advantages__info">721</p>
+    <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+    </li>
+       <li class="advantages__item icon-apple">
+        <p class="advantages__info">16kg</p>
+        <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+       </li>
+       <li class="advantages__item icon-heart">
+        <p class="advantages__info">84</p>
+        <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+       </li>
+   </ul> 
+    </div>
+</section>
+
+<section class="gallery">
+   <div class="container">
+        <img class="gallery__img"
+        srcset="./images/gallery.png 1x, ./images/gallery@2x.png 2x"
+        src="./images/gallery.png" 
+        alt="Gallery">
+    </div>
+</section>
+
+<section class="rewiews">
+    <div class="container">
+        <img class="rewiews__img"
+        srcset="./images/testimonials.png, ./images/testimonials@2x.png"
+        src="./images/testimonials.png" 
+        alt="Photo">
+
+        <div class="rewiews__wrap">
+            <p class="rewiews__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, 
+    accumsan congue. Lorem 
+    ipsum primis in nibh vel risus.</p>
+        </div>
+        <h3 class="rewiews__name">Emily, Los Angeles</h3>
+    </div>
+</section>
+<section class="contacts">
+    <div class="container">
+        
+    </div>
 </section>
 </main>
 

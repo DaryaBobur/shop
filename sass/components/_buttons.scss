@@ -46,3 +46,28 @@ opacity: 1;
     color: $accent-color;
     background-color: $primary-white-color;
 }
+
+.products__btn {
+    @extend %button;
+    width: 40px;
+    height: 40px;
+}
+
+.about__btn {
+@extend %button;
+display: flex;
+align-items: center;
+padding: 17px 38px 17px 37px;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.29;
+    
+color: $accent-color;
+background-color: $primary-white-color;
+border-radius: 22px;
+
+&:hover,
+&:focus {
+    background-color: $btn-hover;
+}
+}
